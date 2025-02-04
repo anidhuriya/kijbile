@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <link rel="stylesheet" href="checkoutpage.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">Tranquell India</div>
+        <div class="checkout-steps">
+            <span>Cart</span> ➔ <span>Review</span> ➔ <span class="active-step">Checkout</span>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <!-- Shipping Information Section -->
+        <section class="shipping-info">
+            <h2>Checkout</h2>
+            <h3>Shipping Information</h3>
+
+            <div class="shipping-method">
+                <button class="method-btn active">Delivery</button>
+                <button class="method-btn">Pick up</button>
+            </div>
+
+            <form class="form">
+                <label>Full name *</label>
+                <input type="text" placeholder="Enter full name" required>
+
+                <label>Email address *</label>
+                <input type="email" placeholder="Enter email address" required>
+
+                <label>Phone number *</label>
+                <div class="phone-input">
+                    <select>
+                        <option>In +91</option>
+                        <!-- Other country codes -->
+                    </select>
+                    <input type="tel" placeholder="1234567890" required>
+                </div>
+
+                <label>Country *</label>
+                <select>
+                    <option>India</option>
+                    <!-- Other countries -->
+                </select>
+
+                <div class="location">
+                    <input type="text" placeholder="City" required>
+                    <input type="text" placeholder="State" required>
+                    <input type="text" placeholder="ZIP Code" required>
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I have read and agree to the Terms and Conditions.</label>
+                </div>
+            </form>
+        </section>
+
+        <!-- Review Cart Section -->
+        <section class="cart-review">
+            <h3>Review your cart</h3>
+            <div class="cart-item">
+                <img src="White t-shirt product 2.jpeg" alt="tshirt">
+                <div>
+                    <p>tshirt</p>
+                    <p>1x - 20.00</p>
+                </div>
+            </div>
+            
+
+            <div class="discount">
+                <input type="text" placeholder="Discount code">
+
+            <div class="button">Apply now</div>    
+                
+            </div>
+
+            <div class="summary">
+                <p>Subtotal <span>12.00</span></p>
+                <p>Shipping <span>15.00</span></p>
+                <p>Discount <span>-10.00</span></p>
+                <p class="total">Total <span>40.00</span></p>
+            </div>
+
+           
+            <a href="payment.html" class="pay-now">Pay Now</a>
+        
+            
+            <p class="secure-checkout">🔒 Secure Checkout - SSL Encrypted</p>
+        </section>
+    </main>
+</body>
+</html>
